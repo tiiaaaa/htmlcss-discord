@@ -3,3 +3,118 @@
     margin: 0;
     padding: 0;
 }
+
+* a{
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float{
+    float: left;
+}
+
+.position{
+    position: relative;
+}
+
+.width{
+    width: 85%;
+}
+
+div.container{
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    color: white;
+    background-image: url("../img/jumbo.png");
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+/* header */
+header{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 10vh;
+}
+
+div.header-logo img{
+    vertical-align: middle;
+}
+
+header div.dimension{
+    width: calc((100% - 75%) / 2);
+}
+
+/* Nav */
+header > nav{
+    width: 75%;
+    text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 2rem;
+}
+
+.button{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+button a.black{
+    color: black;
+}
+
+.nav-button{
+    margin-left: 5.6rem;
+}
+
+/* Main Section */
+section.main-section{
+    height: calc(100% - 10vh);
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.main-section div.text-wrap{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.text-wrap h1{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+div.text-wrap p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* bottoni nella section */
+div.text-wrap button.left-button{
+    font-size: 1rem;
+    background-color: white;
+}   
+
+div.text-wrap button.right-button{
+    font-size: 1rem;
+    margin-left: 20px;
+    background-color: black;
+}   
+
+
+
